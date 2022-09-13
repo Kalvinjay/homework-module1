@@ -16,6 +16,11 @@
         background: no-repeat lightgrey url(images/cliff_rock.jpg);
         background-size: 1500px;
     }
+    #cliffs header {
+
+        background: no-repeat lightgrey url(images/forest_cliff.jpg);
+        background size: 1500px;
+    }
     .main-header{
         background-color: rgb(255, 255, 255, 0.8);
         width: 700px;
@@ -168,6 +173,16 @@
      td:first-child {
         font-weight: bold;
         background: #bde1ff;
+     }
+     #westcliff {
+        width: 500px;
+        float: left;
+        display: inline;
+     }
+     #northcliff {
+        width: 500px;
+        float: right;
+        display: inline;
      }
      /* contact form*/
 
