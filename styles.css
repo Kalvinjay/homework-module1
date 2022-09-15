@@ -154,7 +154,8 @@
      }
      .caption{ 
         width: 500px;
-        margin: 71px;
+        margin: 0px;
+        margin-left: 192px;
      }
      thead {
         background: #bde1ff;
