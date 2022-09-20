@@ -27,6 +27,10 @@
                     </ul>
                 </nav>
         </header>
+        <section id="timeofday">
+            <span>Your Current Local Time: </span>
+            <span id="clock"></span>
+        </section>
         <main>
                 <h1>Introducing California's Greatest Cliffs</h1>
                 <h2>What is so unique about California Cliffs?</h2>
@@ -35,26 +39,26 @@
                 <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and most visited.
                 </p>
         </main>
-                <section  class="partnerimagess">                   
-                <ul id="partners">
-                            <li class="partner">
-                                <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+                <section class="partnerimagess">                   
+                    <ul id="partners">
+                           <!-- <li class="partner">
+                                <img src="images/partners/partner1.png" alt="Partner Bus Tours">
                             </li>
                             <li class="partner">
-                                <img src="images/partners/partner-cabinrental.png">
+                                <img src="images/partners/partner2.png">
                             </li>
                             <li class="partner">
-                                <img src="images/partners/partner-campingadv.png">
+                                <img src="images/partners/partner3.png">
                             </li>
                             <li class="partner">
-                                <img src="images/partners/partner-collegetours.png">
+                                <img src="images/partners/partner4.png">
                             </li>
                             <li class="partner">
-                                <img src="images/partners/partner-rentalbike.png">
+                                <img src="images/partners/partner5.png">
                             </li>
                             <li class="partner">
-                                <img src="images/partners/partner-tourgroup.png">
-                            </li>
+                                <img src="images/partners/partner6.png">
+                            </li> -->
                     </ul>
                 </section>
                 <footer>
@@ -74,6 +78,62 @@
                 </footer>
         </div>
     </div>
-    
+
+    <!--Javascript codes-->
+
+    <script>
+        //Create a time data function
+        function currentTime() {
+            //Declare variables
+            var d = new Date(); //Get current date
+            var hr = d.getHours(); //Get current hours
+            var min = d.getMinutes(); //Get current minutes
+            var sec = d.getSeconds(); //Get current seconds
+            var ampm; //Declare empty variable to store AM or PM
+
+            //Add 0 to single digits for seconds
+            if (sec < 10) {
+                sec = "0" + sec;
+            }
+            //Add 0 to single digits for minutes
+            if (min < 10) {
+                min = "0" + min;
+            }
+            //Determine Am or PM string
+            if (hr == 12) {
+                ampm = "PM"; //Set to pm
+            } else if ( hr > 12) {
+                hr -= 12; //Deduct 12 from hours greater than 12 (military time)
+                ampm = "PM"; //Set to PM
+            } else {
+                ampm = "AM"; //Set to AM
+            }
+
+        //Assemble time format to display
+        var time = hr + ":" + min + ":" + sec + " " + ampm;
+
+        //Display current local time and time zone on HTML elements
+        document.getElementById("clock").innerText = time; //adding time
+        }
+
+        //Initial run of time data function
+        currentTime();
+    </script>
+    <script>
+        var photos = [];
+        var fileNames = [];
+        var imageList = [];
+        var image;
+        var openList = "<li class='partner'>";
+        var closeList = "</li>";
+
+        for (var i=0; i<6; i++) {
+          fileNames.push("partners/partner"+(i+1));
+          photos.push("<img src='images/" + fileNames[i] + ".png'>");
+          image = openList + photos[i] + closeList;
+          imageList.push(image);
+        }
+        document.getElementById("partners").innerHTML = imageList.join(" ");
+    </script>    
 </body>
 </html>
