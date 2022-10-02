@@ -178,7 +178,13 @@
         vertical-align: middle;
         border: solid 1px #852b1b;
      }
-     th:first-child {
+     /*th:first-child {
+        width: 125px;
+        height: 50px;
+        background: #4977d1;
+        color: #fff;
+     }*/
+     .firstclass {
         width: 125px;
         height: 50px;
         background: #4977d1;
@@ -188,7 +194,10 @@
         font-weight: bold;
         background: #bde1ff;
      }
-    
+    .highlight {
+        color: white;
+        background: yellowgreen;
+    }
      /* Cliffs page */
 
      .westcliff {
@@ -229,6 +238,18 @@
         background: #fff;
         padding-top: 1em;
      }
+     .noselect {
+        font-weight: 100;
+        text-align: left;
+     }
+     .activitytitlenoselect {
+        background: #bde1ff;
+     }
+     .cursorhand{
+        cursor: pointer;
+        margin: 15px 0;
+     }
+
 
      /* contact form*/
 

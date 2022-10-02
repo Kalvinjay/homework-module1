@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="activities">
     <div id="container">
@@ -27,7 +28,7 @@
                 <table>
                     <caption>Activities at the Cliff</caption>
                     <thead>
-                        <th>Activity </th>
+                        <th class="firstclass">Activity </th>
                         <th>West Cliff</th>
                         <th>North Cliff</th>
                         <th>East Cliff</th>
@@ -35,46 +36,46 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Hiking</td>
-                            <td>College Hikes</td>
-                            <td>Family Fun</td>
-                            <td>Treasure Trails</td>
-                            <td>Canyon Explorer</td>
+                            <th class="activitytitlenoselect">Hiking</th>
+                            <td class="cursorhand">College Hikes</td>
+                            <td class="cursorhand">Family Fun</td>
+                            <td class="cursorhand">Treasure Trails</td>
+                            <td class="cursorhand">Canyon Explorer</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>Kayak</td>
-                            <td>Western Kayak Meetup</td>
-                            <td>Not Available</td>
-                            <td>Youth Kayaking</td>
-                            <td>Kayak down</td>
+                            <th class="activitytitlenoselect">Kayak</th>
+                            <td class="cursorhand">Western Kayak Meetup</td>
+                            <th class="noselect">Not Available</th>
+                            <td class="cursorhand">Kayaking</td>
+                            <td class="cursorhand">Kayak down</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>Skydiving</td>
-                            <td>Seacliff Diving</td>
-                            <td>Sky is the limit</td>
-                            <td>Not Available</td>
-                            <td>Sky Diving for Begginers</td>
+                            <th class="activitytitlenoselect">Skydiving</th>
+                            <td class="cursorhand">Seacliff Diving</td>
+                            <td class="cursorhand">Sky is the limit</td>
+                            <th class="noselect">Not Available</th>
+                            <td class="cursorhand">Sky Diving for Begginers</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>Biking</td>
-                            <td>Bicycle for One</td>
-                            <td>Not Available</td>
-                            <td>Bike Meetup Group</td>
-                            <td>Not Available</td>
+                            <th class="activitytitlenoselect">Biking</th>
+                            <td class="cursorhand">Bicycle for One</td>
+                            <th class="noselect">Not Available</th>
+                            <td class="cursorhand">Bike Meetup Group</td>
+                            <th class="noselect">Not Available</th>
                         </tr>
                     </tbody>
                     <tbody>
-                        <td>Camping</td>
-                        <td>Youth Camp</td>
-                        <td>Rent a Tent</td>
-                        <td>Campground adventure</td>
-                        <td>Sunset Camping</td>
+                        <th class="activitytitlenoselect">Camping</th>
+                        <td class="cursorhand">Youth Camp</td>
+                        <td class="cursorhand">Rent a Tent</td>
+                        <td class="cursorhand">Campground adventure</td>
+                        <td class="cursorhand">Sunset Camping</td>
                     </tbody>
 
                 </table>
@@ -121,5 +122,7 @@
     <!-- Partners -->
     <script src="js/site_scripts.js"></script>
     
+    <!-- adding jQuery to td element -->
+    <script src="js/activity.js"></script>
 </body>
 </html>

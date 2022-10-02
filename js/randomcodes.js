@@ -7,7 +7,7 @@ function generateCode() {
     var getCode = ' '; //to store entered code
     var btnvalue; //for button boolean value
     //create variable to hold the type of characters we want to show as codes
-    var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$'
+    var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
 
     //Generate character multiple times using a loop
     for (i = 1; i<= 8; i++) {
