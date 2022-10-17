@@ -14,16 +14,17 @@
     }
     #contact header {
         background: no-repeat lightgrey url(images/cliff_rock.jpg);
-        background-size: 1500px;
+        /* background-size: 1500px; */
+        width: 100%;
     }
     #cliffs header {
 
         background: no-repeat lightgrey url(images/forest_cliff.jpg);
-        background size: 1500px;
+        background-size: 1500px;
     }
     .main-header{
-        background-color: rgb(255, 255, 255, 0.8);
-        width: 700px;
+        background-color: #343a40!important;
+        width: 100%;
         margin: 2em auto 0 auto;
         height: 100px;
     }
@@ -48,17 +49,18 @@
     }
     /*  Navigation background: 0deg,rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%; */
     .main-menu{
-        margin-left: 210px;
+        margin-left: 176px;
         font-weight: 400;
+        height: 100px;
+        
     }
     .main-menu ul li{
         list-style-type: none;
         display: inline-block;
-        float: left;
         padding-left: 25px;
         padding-right: 25px;
         border-left: 1px solid rgba(202, 204, 202, 0.6);
-        line-height: 100px;
+        line-height: 85px;
         text-transform: uppercase;
         font-size: 14px;
     }
@@ -76,31 +78,43 @@
     .main-menu ul li.active a {
         color: #fff;
     }
+    section#info1 {
+        border: 1px solid black;
+    }
+    section#info2 {
+        border: 1px solid black;
+    }
     /* Main */
     h1{
         font-family: Arial, Helvetica, sans-serif;
         color: #9ed034;
+        text-align: center;
     }
     /* Partners */
+
+    .cliffs {
+        margin: 0;
+    }
     .partnerimagess{
-        width: 100%;
+        /* width: 100%; */
         background-color: #4288c3;
     }
-    section #partners {
-        width: 100%;
+    #partners {
         padding: 2em 0 2em 0;
         margin: 0 auto;
         text-align: center;
         background-color: #4288c3;
     }
-    section #partners .partner {
+    #partners .partner {
         display: inline-block;
         margin: 0 0.75em;
         padding: 1.3em 1.5em;
         background-color: #fff;
+        margin-top: 20px;
         border-radius: 50%;
+        margin: auto;
     }
-    section #partners .partner img {
+    #partners .partner img {
         width: 90px;
         height: 90px;
     }
@@ -207,16 +221,17 @@
         background: #fff;
         padding-top: 1em;
      }
-     /* h3 {
+      h3 {
         background-color: #852b1b;
-        height: 40px;
+        height: 60px;
         padding-top: 1em;
         font-size: 1.3em;
         text-align: center;
         color: #fff;
         font-weight: bold;
-        margin: 0;
-     } */
+        margin: auto;
+        width: 500px;
+     } 
      .northcliff {
         text-align: center;
         width: 50%;
@@ -253,6 +268,10 @@
 
      /* contact form*/
 
+    
+     fieldset.solid {
+        border-style: solid;
+     }
      input {
         width: 300px;
         height: 25px;
@@ -284,3 +303,96 @@
         font-size: large;
         padding: 0 1rem;
      }
+     .navbar-collapse {
+        background: rgb(52, 58, 64, 0.5);
+        
+     }
+
+/* Media Queries */
+
+/* Home page */
+
+/* @media (max-width: 576px) {
+    main .info1 .info2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+} */
+@media (min-width: 577px) {
+    main#page1main {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 30px;
+        margin: auto;
+    }
+}
+
+/* Activities page */
+
+/* Cliffs page */
+
+@media  (max-width: 767px) {
+    .cliffs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .cliffs {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 40px;
+    }
+}
+
+
+/* @media (max-width: 768px) {
+    div#cliffs {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+    }    
+} */
+/* @media (min-width: 577px) {
+    div#cliffs {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+} */
+
+/* Partners */
+
+@media  (max-width: 576px) {
+    #partners {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 20px;
+    }
+}
+@media (min-width: 577px) {
+    #partners {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 20px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    #partners {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-gap: 50px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    #partners {
+        display: grid;
+        grid-template-columns: repeat(6, 6fr);
+        width: 100%;
+    }
+}
