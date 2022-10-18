@@ -17,20 +17,18 @@
         background-size: 100% 400px;
     }
     #cliffs header {
-
         background: no-repeat white url(images/forest_cliff.jpg);
         background-size: 100% 400px;
+        height: 200px;
     }
-    .main-header{
+    /* .main-header{
         background-color: #343a40!important;
         width: 100%;
         margin: 2em auto 0 auto;
         height: 100px;
     }
-    img {
-        height: 100px;
-    }
-    .main-header.logo img{
+   */
+    .main-header img{
         width: 100px;
         height: 100px;
         margin: 0 2em 0 ;
@@ -218,9 +216,6 @@
     }
      /* Cliffs page */
 
-     div#cliffs {
-
-     }
 
      .westcliff {
         text-align: center;
@@ -275,6 +270,7 @@
 
 
      /* contact form*/
+
     
      fieldset.solid {
         border-style: solid;
@@ -354,6 +350,10 @@
         grid-template-columns: repeat(2, 2fr);
         grid-gap: 40px;
     }
+}
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    margin-left: inherit; }
 }
 
 
