@@ -1,26 +1,25 @@
  /* Header */
  header{
     width: 100%;
-    min-height: 500px;
-    padding-top: 3em;
+    min-height: 275px;
+    /* padding-top: 3em; */
     }
     #home header{
-        background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-        background-size: 1500px;
+        background: no-repeat white url(images/cliff_ocean.jpg);
+        background-size: 100% 400px;
     }
     #activities header {
-        background: no-repeat lightgrey url(images/runfly.jpg);
-        background-size: 1500px;
+        background: no-repeat white url(images/runfly.jpg);
+        background-size: 100% 400px;
     }
     #contact header {
-        background: no-repeat lightgrey url(images/cliff_rock.jpg);
-        /* background-size: 1500px; */
-        width: 100%;
+        background: no-repeat white url(images/cliff_rock.jpg);
+        background-size: 100% 400px;
     }
     #cliffs header {
 
-        background: no-repeat lightgrey url(images/forest_cliff.jpg);
-        background-size: 1500px;
+        background: no-repeat white url(images/forest_cliff.jpg);
+        background-size: 100% 400px;
     }
     .main-header{
         background-color: #343a40!important;
@@ -28,12 +27,16 @@
         margin: 2em auto 0 auto;
         height: 100px;
     }
-    .main-header .logo img{
+    img {
+        height: 100px;
+    }
+    .main-header.logo img{
         width: 100px;
         height: 100px;
-        margin: 0 2em 0 0;
+        margin: 0 2em 0 ;
         float: left;
     }
+
     
     /* Clock css */
 
@@ -52,6 +55,7 @@
         margin-left: 176px;
         font-weight: 400;
         height: 100px;
+        background:  rgba(38, 41, 61, 0.7);
         
     }
     .main-menu ul li{
@@ -214,6 +218,10 @@
     }
      /* Cliffs page */
 
+     div#cliffs {
+
+     }
+
      .westcliff {
         text-align: center;
         width: 50%;
@@ -267,7 +275,6 @@
 
 
      /* contact form*/
-
     
      fieldset.solid {
         border-style: solid;
@@ -307,6 +314,7 @@
         background: rgb(52, 58, 64, 0.5);
         
      }
+     
 
 /* Media Queries */
 
